@@ -27,7 +27,7 @@ namespace Magic8Ball
 
 	class program
 	{
-
+		
 		static void Main(string[] args)
 		{	
 
@@ -48,6 +48,7 @@ namespace Magic8Ball
 				// A randomizer object
 				Random randomObject = new Random ();
 
+				// Sets the thinking about answer to sleep
 				int numberOfSecondsToSleep = randomObject.Next (5) + 1;
 				Console.ForegroundColor = ConsoleColor.Green;
 				Console.WriteLine("Thinking about your answer, stand by......");
@@ -139,6 +140,7 @@ namespace Magic8Ball
 			Console.ForegroundColor = ConsoleColor.Cyan;
 			Console.WriteLine(" (By: Cubed)");
 		}
+			
 
 		/// <summary>
 		/// This function wiull return the text the user types
